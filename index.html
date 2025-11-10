@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey and Lion Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #87CEEB 0%, #DEB887 70%);
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        canvas {
+            border: 3px solid #654321;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: linear-gradient(to bottom, #87CEEB 0%, #DEB887 60%, #8B7355 100%);
+        }
+
+        .controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .title {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Monkey and Lion Story</h1>
+    <canvas id="animationCanvas" width="800" height="600"></canvas>
+    <div class="controls">
+        <button id="playBtn">Play Animation</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <script src="animation.js"></script>
+</body>
+</html>
